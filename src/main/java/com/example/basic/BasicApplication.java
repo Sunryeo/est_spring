@@ -1,21 +1,17 @@
 package com.example.basic;
 
+
+import com.example.service.MyService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.example")
 public class BasicApplication {
 
   public static void main(String[] args) {
-    User model = new User("max@gmail.com", "김승조", 30);
-    UserView userView = new UserView();
-    UserController userController = new UserController(model, userView);
-    userController.updateView();
-    userController.setUserName("김승조랑말");
-    userController.setUserAge(31);
-
-    userController.updateView();
+    MyService myService = new MyService();
+    myService.hello();
     SpringApplication.run(BasicApplication.class, args);
   }
 
