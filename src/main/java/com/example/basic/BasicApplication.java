@@ -9,11 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.TimeZone;
 
-@SpringBootApplication(scanBasePackages = "com.example")
+@SpringBootApplication(scanBasePackages = "com.example.day0715")
 public class BasicApplication {
-
-  @Autowired Message message;
-
   @Value("${server.port}")
   private int port;
 
