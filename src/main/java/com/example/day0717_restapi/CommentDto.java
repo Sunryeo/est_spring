@@ -1,16 +1,19 @@
-package com.example.basic.day0716;
+package com.example.day0717_restapi;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class CommentDto {
   private Long id;
-  private String name;
-  private String password;
+  private String author;
+  private String content;
+  private LocalDateTime createdAt;
 }

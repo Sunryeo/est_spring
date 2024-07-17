@@ -1,4 +1,4 @@
-package com.example.basic.day0716;
+package com.example.day0716;
 
 import java.util.List;
 import org.springframework.web.bind.annotation.DeleteMapping;
