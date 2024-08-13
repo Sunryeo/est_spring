@@ -81,6 +81,7 @@ public class BoardPostService {
     return commentDto;
   }
 
+  @LogExecutionTime
   public List<BoardPostDto> getAllBoardPosts() {
     return boardPosts.stream()
         .map(BoardPostService::convertToBoardPostDto)
