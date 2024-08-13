@@ -1,0 +1,11 @@
+#spring.application.name=basic
+spring:
+  application:
+    name: est-service-prod
+
+kakao:
+  api:
+    key: 1234567890
+
+server:
+  port: 8082

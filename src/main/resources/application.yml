@@ -1,0 +1,40 @@
+#spring.application.name=basic
+spring:
+  application:
+    name: est-basic
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:13306/spring
+    username: root
+    password: moon30614%
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: utf-8
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8083
+  servlet:
+    session:
+      timeout: 30m
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+
+
