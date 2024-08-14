@@ -1,6 +1,6 @@
 package com.example.basic;
 
-import com.example.Calculator;
+import com.example.pre.Calculator;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;

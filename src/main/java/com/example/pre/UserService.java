@@ -1,4 +1,4 @@
-package com.example.tdd_demo;
+package com.example.pre;
 
 public class UserService {
   private final UserRepository userRepository;

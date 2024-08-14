@@ -1,5 +1,9 @@
-package com.example.tdd_demo;
+package com.example.tdd_demo.pre;
 
+import com.example.pre.User;
+import com.example.pre.UserNotFoundException;
+import com.example.pre.UserRepository;
+import com.example.pre.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
